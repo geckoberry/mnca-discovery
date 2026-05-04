@@ -12,16 +12,16 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
       t = 0
     </td>
     <td align="center" width="20%">
-      <img src="images/step_1.png" width="200"><br>
+      <img src="images/GOL0.png" width="200"><br>
     </td>
     <td align="center" width="20%">
-      <img src="images/step_2.png" width="200"><br>
+      <img src="images/GOL2.png" width="200"><br>
     </td>
     <td align="center" width="20%">
-      <img src="images/step_2.png" width="200"><br>
+      <img src="images/GOL3.png" width="200"><br>
     </td>
     <td align="center" width="20%">
-      <img src="images/step_3.png" width="200"><br>
+      <img src="images/GOL5.png" width="200"><br>
     </td>
   </tr>
   <tr>
@@ -29,16 +29,16 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
       t = 1
     </td>
     <td align="center" width="20%">
-      <img src="images/step_1.png" width="200"><br>
+      <img src="images/GOL1.png" width="200"><br>
     </td>
     <td align="center" width="20%">
-      <img src="images/step_2.png" width="200"><br>
+      <img src="images/GOL2.png" width="200"><br>
     </td>
     <td align="center" width="20%">
-      <img src="images/step_2.png" width="200"><br>
+      <img src="images/GOL4.png" width="200"><br>
     </td>
     <td align="center" width="20%">
-      <img src="images/step_3.png" width="200"><br>
+      <img src="images/GOL6.png" width="200"><br>
     </td>
   </tr>
   <tr>
