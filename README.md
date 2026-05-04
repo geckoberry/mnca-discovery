@@ -111,10 +111,16 @@ For each cell:
 Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate multiple "candidate" MNCA patterns/rulesets per cell per frame, and use some function to score each ruleset and pick one for that particular cell and frame. SMNCA massively increases the parameter space and expressive capability of MNCA. Here are some patterns I discovered while working in a single channel, continous SMNCA rulespace. The selection function for these patterns always awards the candidate pattern that changes the target cell's value the most.
 <table>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="25%">
       <img src="images/smnca1.gif" width="200"><br>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="25%">
+      <img src="images/smnca2.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/smnca1.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
       <img src="images/smnca2.gif" width="200"><br>
     </td>
   </tr>
