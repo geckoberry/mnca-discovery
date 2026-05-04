@@ -85,14 +85,28 @@ MNCA makes two major expansions from Conway's Game of Life, those being larger n
   </tr>
   <tr>
     <td align="center" width="50%">
-      The rules in action
+      Neighborhood A
     </td>
     <td align="center" width="50%">
-      The rules in action
+      Neighborhood B
     </td>
   </tr>
 </table>
-The simplest way to implement MNCA is to apply a similar rule scheme to CGOL to each neighborhood (a 1/alive or 0/dead depending on the sum of neighbors for each neighborhood). However, we can also utilize a continous space by storing float values [0.0, 1.0] in each cell. We then have a float neighborhood sum as well as a fixed/parameterized weight we add/subtract to the target cell (rather than setting 1 or 0).
+The simplest way to implement MNCA is to apply a similar rule scheme to CGOL to each neighborhood (a 1/alive or 0/dead depending on the sum of neighbors for each neighborhood). However, we can also utilize a continous space by storing float values [0.0, 1.0] in each cell. We then have a float neighborhood sum as well as a fixed/parameterized weight we add to the target cell (rather than setting 1 or 0).
+
+```
+# Continuous MNCA Ruleset Skeleton Example
+
+For each pixel:
+  If Neighborhood A sum between (a, b):
+    pixel += weight1
+  If Neighborhood A sum between (c, d):
+    pixel += weight2
+  If Neighborhood B sum between (e, f):
+    pixel += weight3
+  If Neighborhood B sum between (g, h):
+    pixel += weight4
+```
 
 ## My rulespace
 
