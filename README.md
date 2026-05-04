@@ -118,10 +118,10 @@ Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate 
       <img src="images/smnca2.gif" width="200"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/smnca1.gif" width="200"><br>
+      <img src="images/smnca3.gif" width="200"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/smnca2.gif" width="200"><br>
+      <img src="images/smnca4.gif" width="200"><br>
     </td>
   </tr>
 </table>
