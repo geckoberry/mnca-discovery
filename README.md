@@ -141,3 +141,75 @@ Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate 
 #### Parameter map
 
 ## Gallery
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/mnca01.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca02.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca03.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca04.gif" width="200"><br>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/mnca05.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca06.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca07.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca08.gif" width="200"><br>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/mnca09.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca10.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca11.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca12.gif" width="200"><br>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/mnca13.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca14.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca15.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca16.gif" width="200"><br>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/mnca17.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca18.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca19.gif" width="200"><br>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/mnca20.gif" width="200"><br>
+    </td>
+  </tr>
+</table>
