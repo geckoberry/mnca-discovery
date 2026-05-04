@@ -5,7 +5,7 @@ A tool for discovering and evolving patterns in a 6 channel MNCA rulespace.
 ## MNCA origins ([source](https://slackermanz.com/understanding-multiple-neighborhood-cellular-automata/))
 MNCA (Multiple Neighborhood Cellular Automata) is a family of cellular automata, created by Slackermanz. Please check the source for a more in depth explanation of MNCA.
 #### Conway's Game of Life
-MNCA is built upon the principles of Conway's Game of Life, created by John Conway in 1970. To better understand MNCA, we can take a look at the simple rules that govern CGOL. For each cell in our grid, we take the number of "neighbors" (# of alive / filled cells among the 8 surrounding cells) and do the following at each frame / timestep (neighboring cells' updates not shown):
+MNCA is built upon the principles of Conway's Game of Life, created by John Conway in 1970. To better understand MNCA, we can take a look at the simple rules that govern CGOL. For each cell in our grid, we take the **sum of "neighbors"** (# of alive / filled cells among the 8 surrounding cells) and do the following at each frame / timestep (neighboring cells' updates not shown):
 <table>
   <tr>
     <td align="center" width="20%">
@@ -106,6 +106,7 @@ For each cell:
     cell += weight3
   If Neighborhood B sum between (g, h):
     cell += weight4
+  ...
 ```
 #### Selective MNCA
 Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate multiple "candidate" MNCA patterns/rulesets per cell per frame, and use some function to score each ruleset and pick one for that particular cell and frame. SMNCA massively increases the parameter space and expressive capability of MNCA. Here are some patterns I discovered while working in a single channel, continous SMNCA rulespace. The selection function for these patterns always awards the candidate pattern that changes the target cell's value the most.
@@ -128,6 +129,19 @@ Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate 
 
 ## My rulespace
 
+The rulespace used for this tool is a cross-channel variant of the SMNCA family with 6 channels (RGB + 3 channels). A single ruleset is structured as follows:
+```
+Candidate 0
+  - 2 neighborhoods
+  - 4 threshold (lo, hi) pairs
+  - 8 channel mix sextets (4 read, 4 write)
+Candidate 1
+Candidate 2
+Candidate 3
+
+For each channel, select the candidate with greatest change to said channel.
+```
+To understand how these rules work, we can take a look at a specific pattern in the space.
 #### Neighborhoods
 
 #### Thresholds
