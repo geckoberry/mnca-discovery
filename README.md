@@ -62,7 +62,7 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
 <table>
   <tr>
     <td align="center" width="100%">
-      <img src="images/GOL.gif" width="750"><br>
+      <img src="images/GOL.gif" width="500"><br>
     </td>
   </tr>
   <tr>
