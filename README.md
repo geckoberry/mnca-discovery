@@ -97,16 +97,28 @@ The simplest way to implement MNCA is to apply a similar rule scheme to CGOL to 
 ```
 # Continuous MNCA Ruleset Skeleton Example
 
-For each pixel:
+For each cell:
   If Neighborhood A sum between (a, b):
-    pixel += weight1
+    cell += weight1
   If Neighborhood A sum between (c, d):
-    pixel += weight2
+    cell += weight2
   If Neighborhood B sum between (e, f):
-    pixel += weight3
+    cell += weight3
   If Neighborhood B sum between (g, h):
-    pixel += weight4
+    cell += weight4
 ```
+#### Selective MNCA
+Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate multiple "candidate" MNCA patterns/rulesets per cell per frame, and use some function to score each ruleset and pick one for that particular cell and frame. SMNCA massively increases the parameter space and expressive capability of MNCA. Here are some patterns I discovered while working in a single channel, continous SMNCA rulespace. The selection function for these patterns always awards the candidate pattern that changes the target cell's value the most.
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/smnca1.gif" width="300"><br>
+    </td>
+    <td align="center" width="50%">
+      <img src="images/neighborhoodB.png" width="300"><br>
+    </td>
+  </tr>
+</table>
 
 ## My rulespace
 
