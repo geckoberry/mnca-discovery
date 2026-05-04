@@ -3,7 +3,7 @@
 A tool for discovering and evolving patterns in a 6 channel MNCA rulespace.
 
 ## MNCA origins ([source](https://slackermanz.com/understanding-multiple-neighborhood-cellular-automata/))
-MNCA (Multiple Neighborhood Cellular Automata) is a family of cellular automata, created by Slackermanz.
+MNCA (Multiple Neighborhood Cellular Automata) is a family of cellular automata, created by Slackermanz. Please check the source for a more in depth explanation of MNCA.
 #### Conway's Game of Life
 MNCA is built upon the principles of Conway's Game of Life, created by John Conway in 1970. To better understand MNCA, we can take a look at the simple rules that govern CGOL. For each cell in our grid, we take the number of "neighbors" (# of alive / filled cells among the 8 surrounding cells) and do the following at each frame / timestep (neighboring cells' updates not shown):
 <table>
@@ -73,8 +73,39 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
 </table>
 
 #### Expansion to MNCA
-MNCA makes two major expansions from Conway's Game of Life, those being larger neighborhoods and the use of two or more such neighborhoods, each with their own set of rules.
+MNCA makes two major expansions from Conway's Game of Life, those being larger neighborhoods and the use of two or more such neighborhoods, each with their own set of rules. Take the following example pair of neighborhoods:
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/neighborhoodA.png" width="300"><br>
+    </td>
+    <td align="center" width="50%">
+      <img src="images/neighborhoodB.png" width="300"><br>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      The rules in action
+    </td>
+    <td align="center" width="50%">
+      The rules in action
+    </td>
+  </tr>
+</table>
+The simplest way to implement MNCA is to apply a similar rule scheme to CGOL to each neighborhood (a 1/alive or 0/dead depending on the sum of neighbors for each neighborhood). However, we can also utilize a continous space by storing float values [0.0, 1.0] in each cell. We then have a float neighborhood sum as well as a fixed/parameterized weight we add/subtract to the target cell (rather than setting 1 or 0).
 
-## This rulespace
+## My rulespace
+
+#### Neighborhoods
+
+#### Thresholds
+
+#### Channel mixing weights
 
 ## Tool capabilities
+
+#### Pattern mutation
+
+#### Parameter map
+
+## Gallery
