@@ -224,12 +224,44 @@ Each neighborhood has two corresponding "rules". A rule consists of a **threshol
 
 In our rulespace, rule 1 of a neighborhood always increments the target while rule 2 always decrements the target. This roughly ensures that the pattern is not biased towards gamma 1 or 0.
 
-Let's look at rule 1 of candidate 1's B neighborhood. 
+Let's look at rule 1 of candidate 1's B neighborhood: 
 ```
 lo, hi = 0.3098, 0.7098
 
 read  sextet: [0.1373, 0.1916, 0.1654, 0.0000, 0.3346, 0.1711]
 write sextet: [0.0036, 0.3863, 0.2323, 0.0568, 0.2110, 0.1101]
+```
+And assume this initial state for our target cell:
+<table>
+  <tr>
+    <td align="center" width="100%">
+      <img src="images/example-seed.png" width="250"><br>
+    </td>
+  </tr>
+</table>
+We can then calculate the neighborhood averages for each channel as follows:
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/example-seed-red.png" width="250"><br>
+    </td>
+    <td align="top-left" width="50%">
+  <pre><code>
+neighborhood area   = 324 cells
+channel 1 sum (red) = 119.9
+channel 1 average   = 119.9 / 324 = 0.3701
+  </code></pre>
+    </td>
+  </tr>
+</table>
+Also assume the following averages for the other 5 channel:
+
+```
+channel 2 average = 0.2364
+channel 3 average = 0.2573
+channel 4 average = 
+channel 5 average =
+channel 6 average = 
 ```
 
 ## Tool capabilities
