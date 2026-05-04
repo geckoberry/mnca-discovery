@@ -5,7 +5,7 @@ A tool for discovering and evolving patterns in a 6 channel MNCA rulespace.
 ## MNCA origins ([source](https://slackermanz.com/understanding-multiple-neighborhood-cellular-automata/))
 MNCA (Multiple Neighborhood Cellular Automata) is a family of cellular automata, created by Slackermanz.
 #### Conway's Game of Life
-MNCA is built upon the principles of Conway's Game of Life, created by John Conway in 1970. To better understand MNCA, we can take a look at the simple rules that govern CGOL. For each cell in our grid, we take the number of "neighbors" (# of alive / filled cells in the 8 surrounding cells) and do the following at each frame / timestep (neighboring cells' updates not shown):
+MNCA is built upon the principles of Conway's Game of Life, created by John Conway in 1970. To better understand MNCA, we can take a look at the simple rules that govern CGOL. For each cell in our grid, we take the number of "neighbors" (# of alive / filled cells among the 8 surrounding cells) and do the following at each frame / timestep (neighboring cells' updates not shown):
 <table>
   <tr>
     <td align="center" width="20%">
@@ -72,8 +72,9 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
   </tr>
 </table>
 
+#### Expansion to MNCA
+MNCA makes two major expansions from Conway's Game of Life, those being larger neighborhoods and the use of two or more such neighborhoods, each with their own set of rules.
 
+## This rulespace
 
-# This rulespace
-
-# Tool capabilities
+## Tool capabilities
