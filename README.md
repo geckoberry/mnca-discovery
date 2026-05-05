@@ -239,7 +239,7 @@ And assume this initial state for our target cell:
     </td>
   </tr>
 </table>
-We can then calculate the neighborhood averages for each channel as follows:
+We can then calculate the neighborhood averages for each channel like so:
 <table>
   <tr>
     <td align="center" width="50%">
@@ -254,15 +254,30 @@ channel 1 average   = 119.9 / 324 = 0.3701
     </td>
   </tr>
 </table>
-Also assume the following averages for the other 5 channel:
+Also assume the following averages are calculated for the other 5 channel:
 
 ```
 channel 2 average = 0.2364
 channel 3 average = 0.2573
-channel 4 average = 
-channel 5 average =
-channel 6 average = 
+channel 4 average = 0.4828
+channel 5 average = 0.5001
+channel 6 average = 0.3210
 ```
+We then take the dot product of the read sextet against our channel averages to arrive at our final read value:
+```
+[0.1373, 0.1916, 0.1654, 0.0000, 0.3346, 0.1711] • [0.3701, 0.2364, 0.2573, 0.4828, 0.5001, 0.3210] = 0.3609
+```
+Because our read value falls within our thresholds `(0.3098, 0.7098)` we proceed with writing to the target cell. <br>
+We increment each channel of the target by scaling the read value against our write sextet:
+```
+target channel 1 += 0.3609 * 0.0036
+target channel 2 += 0.3609 * 0.3863
+target channel 3 += 0.3609 * 0.2323
+target channel 4 += 0.3609 * 0.0568
+target channel 5 += 0.3609 * 0.2110
+target channel 6 += 0.3609 * 0.1101
+```
+Rule 2 also applies its updates to the target channels, producing the final candidate 1 updates values for each channel. The same is done for the other three candidates, and the persisting channel update values are chosen by a scoring function that awards highest change. Because winners are chosen independently for each channel, multiple candidates can influence the update to one target cell.
 
 ## Tool capabilities
 
