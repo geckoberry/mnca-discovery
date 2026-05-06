@@ -320,6 +320,19 @@ Rule 2 also applies its updates to the target channels, producing the final cand
 
 #### Parameter map
 
+<table>
+  <tr>
+    <td align="center" width="100%">
+      <img src="images/param-map.png" width="1000"><br>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" width="100%">
+      2D parameter map
+    </td>
+  </tr>
+</table>
+
 ## Gallery
 <table>
   <tr>
