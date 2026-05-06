@@ -244,13 +244,13 @@ We can then calculate the neighborhood averages for each channel like so:
 <br><br>
 <table>
   <tr>
-    <td align="center" width="0%">
+    <td align="center" width="33%">
       Channel 1
     </td>
-    <td align="center" width="0%">
+    <td align="center" width="33%">
       Channel 2
     </td>
-    <td align="center" width="0%">
+    <td align="center" width="33%">
       Channel 3
     </td>
   </tr>
@@ -266,21 +266,21 @@ We can then calculate the neighborhood averages for each channel like so:
     </td>
   </tr>
   <tr>
-    <td align="top-left" width="0%">
+    <td align="top-left" width="33%">
   <pre><code>
   sum = 119.9
   avg = 119.9 / 324 cells
       = 0.3701
   </code></pre>
     </td>
-    <td align="top-left" width="0%">
+    <td align="top-left" width="33%">
   <pre><code>
   sum = 119.9
   avg = 76.6 / 324 cells
       = 0.2364
   </code></pre>
     </td>
-    <td align="top-left" width="0%">
+    <td align="top-left" width="33%">
   <pre><code>
   sum = 119.9
   avg = 83.4 / 324 cells
