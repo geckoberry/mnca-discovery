@@ -313,34 +313,34 @@ Rule 2 also applies its updates to the target channels, producing the final cand
 <table>
   <tr>
     <td align="center">
-      <img src="images/evo-1.gif" width="100"><br>
+      <img src="images/evo-1.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-2.gif" width="100"><br>
+      <img src="images/evo-2.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-3.gif" width="100"><br>
+      <img src="images/evo-3.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-4.gif" width="100"><br>
+      <img src="images/evo-4.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-5.gif" width="100"><br>
+      <img src="images/evo-5.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-6.gif" width="100"><br>
+      <img src="images/evo-6.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-7.gif" width="100"><br>
+      <img src="images/evo-7.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-8.gif" width="100"><br>
+      <img src="images/evo-8.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-9.gif" width="100"><br>
+      <img src="images/evo-9.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-x.gif" width="100"><br>
+      <img src="images/evo-x.gif" width="200"><br>
     </td>
   </tr>
 </table>
