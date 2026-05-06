@@ -29,16 +29,16 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
       t = 0
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL0.png" width="150"><br>
+      <img src="images/GOL0.png" width="100%"><br>
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL2.png" width="150"><br>
+      <img src="images/GOL2.png" width="100%"><br>
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL3.png" width="150"><br>
+      <img src="images/GOL3.png" width="100%"><br>
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL5.png" width="150"><br>
+      <img src="images/GOL5.png" width="100%"><br>
     </td>
   </tr>
   <tr>
@@ -46,16 +46,16 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
       t = 1
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL1.png" width="150"><br>
+      <img src="images/GOL1.png" width="100%"><br>
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL2.png" width="150"><br>
+      <img src="images/GOL2.png" width="100%"><br>
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL4.png" width="150"><br>
+      <img src="images/GOL4.png" width="100%"><br>
     </td>
     <td align="center" width="22%">
-      <img src="images/GOL6.png" width="150"><br>
+      <img src="images/GOL6.png" width="100%"><br>
     </td>
   </tr>
 </table>
@@ -232,40 +232,54 @@ lo, hi = 0.3098, 0.7098
 read  sextet: [0.1373, 0.1916, 0.1654, 0.0000, 0.3346, 0.1711]
 write sextet: [0.0036, 0.3863, 0.2323, 0.0568, 0.2110, 0.1101]
 ```
-And assume this initial state for our target cell:
+Given the initial state of the simulation, we can calculate the neighborhood averages for a target cell like so:
 <table>
   <tr>
-    <td align="center" width="33%">
-      <img src="images/example-seed.png" width="100%"><br>
+    <td align="center" width="25%">
+      Initial state
     </td>
-  </tr>
-</table>
-We can then calculate the neighborhood averages for each channel like so:
-<br><br>
-<table>
-  <tr>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       Channel 1
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       Channel 2
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       Channel 3
     </td>
   </tr>
   <tr>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
+      <img src="images/example-seed.png" width="100%"><br>
+    </td>
+    <td align="center" width="25%">
       <img src="images/example-seed-red.png" width="100%"><br>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <img src="images/example-seed-green.png" width="100%"><br>
     </td>
-    <td align="center" width="33%">
+    <td align="center" width="25%">
       <img src="images/example-seed-blue.png" width="100%"><br>
     </td>
   </tr>
-
+  <tr>
+    <td align="top-left" width="25%">
+      <code>area = 324 cells</code><br>
+      <code>avg  = sum / area</code>
+    </td>
+    <td align="top-left" width="25%">
+      <code>sum = 119.9</code><br>
+      <code>avg = 0.3701</code>
+    </td>
+    <td align="top-left" width="25%">
+      <code>sum = 76.6</code><br>
+      <code>avg = 0.2364</code>
+    </td>
+    <td align="top-left" width="25%">
+      <code>sum = 83.4</code><br>
+      <code>avg = 0.3701</code>
+    </td>
+  </tr>
 </table>
 Also assume the following averages are calculated for the other 3 channel:
 
