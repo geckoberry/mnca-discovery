@@ -261,7 +261,7 @@ We can then calculate the neighborhood averages for each channel like so:
     <td align="center" width="33%">
       <img src="images/example-seed-green.png" width="100%"><br>
     </td>
-    <td align="center" width="34%">
+    <td align="center" width="33%">
       <img src="images/example-seed-blue.png" width="100%"><br>
     </td>
   </tr>
