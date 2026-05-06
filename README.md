@@ -240,25 +240,57 @@ And assume this initial state for our target cell:
   </tr>
 </table>
 We can then calculate the neighborhood averages for each channel like so:
+<br><br>
 <table>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="0%">
+      Channel 1
+    </td>
+    <td align="center" width="0%">
+      Channel 2
+    </td>
+    <td align="center" width="0%">
+      Channel 3
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
       <img src="images/example-seed-red.png" width="250"><br>
     </td>
-    <td align="top-left" width="50%">
+    <td align="center" width="33%">
+      <img src="images/example-seed-green.png" width="250"><br>
+    </td>
+    <td align="center" width="34%">
+      <img src="images/example-seed-blue.png" width="250"><br>
+    </td>
+  <tr>
+  <tr>
+    <td align="top-left" width="0%">
   <pre><code>
-neighborhood area   = 324 cells
-channel 1 sum (red) = 119.9
-channel 1 average   = 119.9 / 324 = 0.3701
+  sum = 119.9
+  avg = 119.9 / 324 cells
+      = 0.3701
+  </code></pre>
+    </td>
+    <td align="top-left" width="0%">
+  <pre><code>
+  sum = 119.9
+  avg = 76.6 / 324 cells
+      = 0.2364
+  </code></pre>
+    </td>
+    <td align="top-left" width="0%">
+  <pre><code>
+  sum = 119.9
+  avg = 83.4 / 324 cells
+      = 0.3701
   </code></pre>
     </td>
   </tr>
 </table>
-Also assume the following averages are calculated for the other 5 channel:
+Also assume the following averages are calculated for the other 3 channel:
 
 ```
-channel 2 average = 0.2364
-channel 3 average = 0.2573
 channel 4 average = 0.4828
 channel 5 average = 0.5001
 channel 6 average = 0.3210
