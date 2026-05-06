@@ -8,53 +8,54 @@ MNCA (Multiple Neighborhood Cellular Automata) is a family of cellular automata,
 MNCA is built upon the principles of Conway's Game of Life, created by John Conway in 1970. To better understand MNCA, we can take a look at the simple rules that govern CGOL. For each cell in our grid, we take the **sum of "neighbors"** (# of alive / filled cells among the 8 surrounding cells) and do the following at each frame / timestep (neighboring cells' updates not shown):
 <table>
   <tr>
-    <td align="center" width="20%">
+    <td align="center" width="12%">
+      Rule
+    </td>
+    <td align="center" width="22%">
+      <2 neighbors: die
+    </td>
+    <td align="center" width="22%">
+      2-3 neighbors: survive
+    </td>
+    <td align="center" width="22%">
+      >3 neighbors: die
+    </td>
+    <td align="center" width="22%">
+      3 neighbors: birth
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="12%">
       t = 0
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL0.png" width="150"><br>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL2.png" width="150"><br>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL3.png" width="150"><br>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL5.png" width="150"><br>
     </td>
   </tr>
   <tr>
-    <td align="center" width="20%">
+    <td align="center" width="12%">
       t = 1
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL1.png" width="150"><br>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL2.png" width="150"><br>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL4.png" width="150"><br>
     </td>
-    <td align="center" width="20%">
+    <td align="center" width="22%">
       <img src="images/GOL6.png" width="150"><br>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="20%">
-    </td>
-    <td align="center" width="20%">
-      <2 neighbors: die
-    </td>
-    <td align="center" width="20%">
-      2-3 neighbors: survive
-    </td>
-    <td align="center" width="20%">
-      >3 neighbors: die
-    </td>
-    <td align="center" width="20%">
-      3 neighbors: birth
     </td>
   </tr>
 </table>
@@ -92,7 +93,7 @@ MNCA makes two major expansions from Conway's Game of Life, those being larger n
     </td>
   </tr>
 </table>
-The simplest way to implement MNCA is to apply a similar rule scheme to CGOL to each neighborhood (a 1/alive or 0/dead depending on the sum of neighbors for each neighborhood). However, we can also utilize a continous space by storing float values [0.0, 1.0] in each cell. We then have a float neighborhood sum as well as a fixed/parameterized weight we add to the target cell (rather than setting 1 or 0).
+The simplest way to implement MNCA is to apply a similar rule scheme to CGOL to each neighborhood (a 1/alive or 0/dead depending on the sum of neighbors for each neighborhood). However, we can also utilize a continous space by storing float values [0.0, 1.0] in each cell as opposed to binary states. We then have a float neighborhood sum as well as a fixed/parameterized weight we add to or subtract from the target cell (rather than setting 1 or 0).
 
 ```
 # Continuous MNCA Ruleset Skeleton Example
@@ -101,11 +102,11 @@ For each cell:
   If Neighborhood A sum between (a, b):
     cell += weight1
   If Neighborhood A sum between (c, d):
-    cell += weight2
+    cell -= weight2
   If Neighborhood B sum between (e, f):
     cell += weight3
   If Neighborhood B sum between (g, h):
-    cell += weight4
+    cell -= weight4
   ...
 ```
 #### Selective MNCA
@@ -157,7 +158,7 @@ To understand how these rules work, we can take a look at a specific pattern in 
 
 #### Neighborhoods
 
-Neighborhoods are randomly selected as 12-long binary sequences. A "1" at the nth bit in our sequence inidicates the inclusion of radius n in our neighborhood. Here are the 8 neighborhoods (2 / candidate) included in the above pattern.
+Neighborhoods are randomly selected as 12-long binary sequences. A "1" at the nth bit in our sequence inidicates the inclusion of radius n in our neighborhood. Here are the 8 neighborhoods (2 per candidate) included in the above pattern.
 
 <table>
   <tr>
@@ -220,7 +221,7 @@ Neighborhoods are randomly selected as 12-long binary sequences. A "1" at the nt
 
 #### Rules
 
-Each neighborhood has two corresponding "rules". A rule consists of a **threshold pair** (lo, hi), one **read sextet** and one **write sextet**. A rule takes the neighborhood average (neighborhood sum / neighborhood area) and compares it to the thresholds to decide whether to update the target cell. 
+Each neighborhood has two corresponding **rules**. A rule consists of a **threshold pair** (lo, hi), one **read sextet** and one **write sextet**. A rule takes the neighborhood average (neighborhood sum / neighborhood area) and compares it to the thresholds to decide whether to update the target cell. 
 
 In our rulespace, rule 1 of a neighborhood always increments the target while rule 2 always decrements the target. This roughly ensures that the pattern is not biased towards gamma 1 or 0.
 
@@ -302,6 +303,8 @@ We then take the dot product of the read sextet against our channel averages to 
 Because our read value falls within our thresholds `(0.3098, 0.7098)` we proceed with writing to the target cell. <br>
 We increment each channel of the target by scaling the read value against our write sextet:
 ```
+write sextet: [0.0036, 0.3863, 0.2323, 0.0568, 0.2110, 0.1101]
+
 target channel 1 += 0.3609 * 0.0036
 target channel 2 += 0.3609 * 0.3863
 target channel 3 += 0.3609 * 0.2323
