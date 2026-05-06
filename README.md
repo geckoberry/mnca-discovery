@@ -281,7 +281,7 @@ Given the initial state of the simulation, we can calculate the neighborhood ave
     </td>
   </tr>
 </table>
-Also assume the following averages are calculated for the other 3 channel:
+Also assume the following averages are calculated for the other 3 channels:
 
 ```
 channel 4 average = 0.4828
