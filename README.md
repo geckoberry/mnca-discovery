@@ -337,9 +337,6 @@ Rule 2 also applies its updates to the target channels, producing the final cand
       <img src="images/evo-8.gif" width="200"><br>
     </td>
     <td align="center">
-      <img src="images/evo-9.gif" width="200"><br>
-    </td>
-    <td align="center">
       <img src="images/evo-x.gif" width="200"><br>
     </td>
   </tr>
