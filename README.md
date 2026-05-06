@@ -60,10 +60,10 @@ MNCA is built upon the principles of Conway's Game of Life, created by John Conw
   </tr>
 </table>
 
-<table>
+<table width="50%">
   <tr>
     <td align="center" width="100%">
-      <img src="images/GOL.gif" width="500"><br>
+      <img src="images/GOL.gif" width="100%"><br>
     </td>
   </tr>
   <tr>
@@ -114,16 +114,16 @@ Selective MNCA (also by Slackermanz) is a variant of MNCA in which we calculate 
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="images/smnca1.gif" width="200"><br>
+      <img src="images/smnca1.gif" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/smnca2.gif" width="200"><br>
+      <img src="images/smnca2.gif" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/smnca3.gif" width="200"><br>
+      <img src="images/smnca3.gif" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/smnca4.gif" width="200"><br>
+      <img src="images/smnca4.gif" width="100%"><br>
     </td>
   </tr>
 </table>
@@ -145,8 +145,8 @@ For each channel, select the candidate with greatest change to said channel.
 To understand how these rules work, we can take a look at a specific pattern in the space.
 <table>
   <tr>
-    <td align="center" width="50%">
-      <img src="images/example.gif" width="600"><br>
+    <td align="center" width="100%">
+      <img src="images/example.gif" width="100%"><br>
     </td>
   </tr>
   <tr>
@@ -163,16 +163,16 @@ Neighborhoods are randomly selected as 12-long binary sequences. A "1" at the nt
 <table>
   <tr>
     <td align="center" width="25%">
-      <img src="images/NA0.png" width="150"><br>
+      <img src="images/NA0.png" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/NB0.png" width="150"><br>
+      <img src="images/NB0.png" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/NA1.png" width="150"><br>
+      <img src="images/NA1.png" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/NB1.png" width="150"><br>
+      <img src="images/NB1.png" width="100%"><br>
     </td>
   </tr>
   <tr>
@@ -191,16 +191,16 @@ Neighborhoods are randomly selected as 12-long binary sequences. A "1" at the nt
   </tr>
   <tr>
     <td align="center" width="25%">
-      <img src="images/NA2.png" width="150"><br>
+      <img src="images/NA2.png" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/NB2.png" width="150"><br>
+      <img src="images/NB2.png" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/NA3.png" width="150"><br>
+      <img src="images/NA3.png" width="100%"><br>
     </td>
     <td align="center" width="25%">
-      <img src="images/NB3.png" width="150"><br>
+      <img src="images/NB3.png" width="100%"><br>
     </td>
   </tr>
   <tr>
@@ -235,8 +235,8 @@ write sextet: [0.0036, 0.3863, 0.2323, 0.0568, 0.2110, 0.1101]
 And assume this initial state for our target cell:
 <table>
   <tr>
-    <td align="center" width="100%">
-      <img src="images/example-seed.png" width="250"><br>
+    <td align="center" width="33%">
+      <img src="images/example-seed.png" width="100%"><br>
     </td>
   </tr>
 </table>
@@ -256,13 +256,13 @@ We can then calculate the neighborhood averages for each channel like so:
   </tr>
   <tr>
     <td align="center" width="33%">
-      <img src="images/example-seed-red.png" width="250"><br>
+      <img src="images/example-seed-red.png" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/example-seed-green.png" width="250"><br>
+      <img src="images/example-seed-green.png" width="100%"><br>
     </td>
     <td align="center" width="34%">
-      <img src="images/example-seed-blue.png" width="250"><br>
+      <img src="images/example-seed-blue.png" width="100%"><br>
     </td>
   </tr>
   <tr>
@@ -340,82 +340,83 @@ Rule 2 also applies its updates to the target channels, producing the final cand
 </table>
 
 ## Gallery
+
 <table>
   <tr>
     <td align="center" width="33%">
-      <img src="images/mnca01.gif" width="260"><br>
+      <img src="images/mnca01.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca02.gif" width="260"><br>
+      <img src="images/mnca02.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca03.gif" width="260"><br>
-    </td>
-  </tr>
-    <tr>
-    <td align="center" width="33%">
-      <img src="images/mnca04.gif" width="260"><br>
-    </td>
-    <td align="center" width="33%">
-      <img src="images/mnca05.gif" width="260"><br>
-    </td>
-    <td align="center" width="33%">
-      <img src="images/mnca06.gif" width="260"><br>
+      <img src="images/mnca03.gif" width="100%"><br>
     </td>
   </tr>
     <tr>
     <td align="center" width="33%">
-      <img src="images/mnca07.gif" width="260"><br>
+      <img src="images/mnca04.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca08.gif" width="260"><br>
+      <img src="images/mnca05.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca09.gif" width="260"><br>
-    </td>
-  </tr>
-    <tr>
-    <td align="center" width="33%">
-      <img src="images/mnca10.gif" width="260"><br>
-    </td>
-    <td align="center" width="33%">
-      <img src="images/mnca11.gif" width="260"><br>
-    </td>
-    <td align="center" width="33%">
-      <img src="images/mnca12.gif" width="260"><br>
+      <img src="images/mnca06.gif" width="100%"><br>
     </td>
   </tr>
     <tr>
     <td align="center" width="33%">
-      <img src="images/mnca13.gif" width="260"><br>
+      <img src="images/mnca07.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca14.gif" width="260"><br>
+      <img src="images/mnca08.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca15.gif" width="260"><br>
-    </td>
-  </tr>
-    <tr>
-    <td align="center" width="33%">
-      <img src="images/mnca16.gif" width="260"><br>
-    </td>
-    <td align="center" width="33%">
-      <img src="images/mnca17.gif" width="260"><br>
-    </td>
-    <td align="center" width="33%">
-      <img src="images/mnca18.gif" width="260"><br>
+      <img src="images/mnca09.gif" width="100%"><br>
     </td>
   </tr>
     <tr>
     <td align="center" width="33%">
-      <img src="images/mnca19.gif" width="260"><br>
+      <img src="images/mnca10.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca20.gif" width="260"><br>
+      <img src="images/mnca11.gif" width="100%"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca22.gif" width="260"><br>
+      <img src="images/mnca12.gif" width="100%"><br>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" width="33%">
+      <img src="images/mnca13.gif" width="100%"><br>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/mnca14.gif" width="100%"><br>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/mnca15.gif" width="100%"><br>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" width="33%">
+      <img src="images/mnca16.gif" width="100%"><br>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/mnca17.gif" width="100%"><br>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/mnca18.gif" width="100%"><br>
+    </td>
+  </tr>
+    <tr>
+    <td align="center" width="33%">
+      <img src="images/mnca19.gif" width="100%"><br>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/mnca20.gif" width="100%"><br>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/mnca22.gif" width="100%"><br>
     </td>
   </tr>
 </table>
