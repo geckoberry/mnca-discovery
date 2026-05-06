@@ -322,13 +322,19 @@ Rule 2 also applies its updates to the target channels, producing the final cand
 
 <table>
   <tr>
-    <td align="center" width="100%">
-      <img src="images/param-map.png" width="1000"><br>
+    <td align="center" width="50%">
+      <img src="images/param-map.png" width="500"><br>
+    </td>
+    <td align="center" width="50%">
+      <img src="images/param-map-zoom.png" width="500"><br>
     </td>
   </tr>
   <tr>
-    <td align="left" width="100%">
+    <td align="left" width="50%">
       2D parameter map
+    </td>
+    <td align="left" width="50%">
+      Same map with tighter bounds
     </td>
   </tr>
 </table>
