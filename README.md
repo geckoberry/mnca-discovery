@@ -265,29 +265,7 @@ We can then calculate the neighborhood averages for each channel like so:
       <img src="images/example-seed-blue.png" width="100%"><br>
     </td>
   </tr>
-  <tr>
-    <td align="top-left" width="33%">
-  <pre><code>
-  sum = 119.9
-  avg = 119.9 / 324 cells
-      = 0.3701
-  </code></pre>
-    </td>
-    <td align="top-left" width="33%">
-  <pre><code>
-  sum = 119.9
-  avg = 76.6 / 324 cells
-      = 0.2364
-  </code></pre>
-    </td>
-    <td align="top-left" width="33%">
-  <pre><code>
-  sum = 119.9
-  avg = 83.4 / 324 cells
-      = 0.3701
-  </code></pre>
-    </td>
-  </tr>
+
 </table>
 Also assume the following averages are calculated for the other 3 channel:
 
