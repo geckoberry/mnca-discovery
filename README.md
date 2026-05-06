@@ -396,7 +396,7 @@ Rule 2 also applies its updates to the target channels, producing the final cand
       <img src="images/mnca20.gif" width="260"><br>
     </td>
     <td align="center" width="33%">
-      <img src="images/mnca21.gif" width="260"><br>
+      <img src="images/mnca22.gif" width="260"><br>
     </td>
   </tr>
 </table>
